@@ -1,6 +1,10 @@
+// Styling CSS
 import "./App.css";
 
-import StickyNavbar from "./components/StickyNavbar";
+// Components
+import StickyNavbar from "./components/StickyNavbar.jsx";
+import About from "./components/About.jsx";
+import Header from "./components/Header.jsx";
 
 function App() {
    
@@ -8,27 +12,10 @@ function App() {
     <>
       <StickyNavbar />
 
-			<header>
-        <div className="wrapper header_hero">
-          <div className="intro">
-            <h1>Hi, My name is Dean</h1>
-            <p>Front-end Developer</p>
-            <p>Critical Thinker</p>
-            <p>Creative Genius...</p>
-          </div>
-
-        </div>
-      </header>
-
+			<Header />
+      
       <main>
-        <section className="about_me" id="about_me">
-          <div className="wrapper">
-            <h2>about</h2>
-            <p>Hi there! I'm a Web and App Developer with a unique background in food & beverage manufacturing and leadership. My journey has been an exciting blend of culinary arts and tech innovation, resulting in a distinctive, yet vast, skill set that I bring to the table.</p> 
-
-            <p>What truly distinguishes me is my capacity for refining my skills through relentless self-improvement and an insatiable thirst for acquiring new and exciting abilities.</p>
-          </div>
-        </section>
+        <About />
 
         <section className="projects" id="projects">
           <div className="wrapper">
