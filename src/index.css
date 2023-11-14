@@ -18,16 +18,21 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
   --lightblue: #0cc7d8; /* Secondary Accent */
   --black: #2a2a2a; 
   --medGrey: #757677; /* Dark Grey Section background */
-  --darkGrey2: #292929; /* Dark Grey Section background */
+  --darkGrey: #262626;
   --white: #fff; /* White */
+  --fontYellow: #F2FDDE; /* Primary Font Color */
+  --accentOrange: #CB7B1E; /* Secondary Accent Color */
+  --black: #000000;
+
+  
   
   font-family: Helvetica, Arial, sans-serif;
   font-size: 125%; /* <-- Changes the default font size to 20px */
   line-height: 1.5;
   font-weight: 400;
-  color: var(--black);
+  color: var(--fontYellow);
   
-  background-color: var(--white);
+  background-color: var(--darkGrey);
 }
 
 .sr-only { 
@@ -45,7 +50,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .wrapper {
   max-width: 1280px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -73,17 +78,10 @@ h1 {
 
 /* template for drop shadows on text */
 /* will need to be removed and placed somewhere else */
-.menu p {
-  color: var(--yellow);
-  text-shadow: 4px 4px #000,2px -2px #000,-2px -2px #000,-2px 2px #000,2px 2px #000;
-  letter-spacing: .1em;
-  font-size: 3rem;
-}
 
 h2 {
   font-weight: 900;
   text-transform: uppercase;
-
   overflow: hidden;
   position: relative;
 }
@@ -93,20 +91,25 @@ h2::after {
   position: absolute;
   left: 180px;
   top: calc(50% - 1.5px);
-  height: 4px;
+  height: 3px;
   width: 100vw;
-  background-color: var(--yellow);
+  background-color: var(--accentOrange);
 }
 
-a {
+.firstName, .lastName {
+  color: var(--accentOrange);
+  font-size: 2rem;
+  letter-spacing: .1em;
+}
+
+.lastName {
+  color: var(--white);
+}
+
+.menu a {
   text-decoration: none;
-  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 200;
+  color: var(--white);
+  font-size: 0.8rem;
 }
-
-a:hover {
-  color: var(--medGrey);
-  border-bottom: 5px solid var(--yellow);
-  padding-bottom: 0.5rem;
-}
-
-

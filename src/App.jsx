@@ -1,61 +1,51 @@
 import "./App.css";
 
+import StickyNavbar from "./components/StickyNavbar";
+
 function App() {
+   
   return (
     <>
-      <nav>
-        <div className="menu wrapper">
-          <p className="logo">DEAN LANE</p>
-          <ul>
-            <li>
-              <a href="#about_me">about me</a>
-            </li>
-            <li>
-              <a href="#projects">projects</a>
-            </li>
-            <li>
-              <a href="#tech_stack">tech stack</a>
-            </li>
-            <li>
-              <a href="#contact_me">contact me</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <StickyNavbar />
 
-			<header className="wrapper">
-      <div className="header_hero">
-        <div className="intro">
-          <h1>Hi, My name is Dean</h1>
-          <p>Front-end Developer</p>
-          <p>Critical Thinker</p>
-          <p>Creative Genius...</p>
-        </div>
+			<header>
+        <div className="wrapper header_hero">
+          <div className="intro">
+            <h1>Hi, My name is Dean</h1>
+            <p>Front-end Developer</p>
+            <p>Critical Thinker</p>
+            <p>Creative Genius...</p>
+          </div>
 
-        <div className="hero_image">
-          <div className="hire_me">HIRE ME</div>
-          <div className="img imgP"></div>
         </div>
-      </div>
-
       </header>
 
       <main>
-        <section className="wrapper about_me" id="about_me">
-          <h2>about me</h2>
-          <p>I am a person who is eager to take on new and exciting challenges. Im a front-end developer. I build webpages and applications for the internet that are engaging, responsive and most importantly accessible. One of my favorite passions is learning and acquiring new skill sets that I can apply into my life and career.</p>
+        <section className="about_me" id="about_me">
+          <div className="wrapper">
+            <h2>about</h2>
+            <p>Hi there! I'm a Web and App Developer with a unique background in food & beverage manufacturing and leadership. My journey has been an exciting blend of culinary arts and tech innovation, resulting in a distinctive, yet vast, skill set that I bring to the table.</p> 
+
+            <p>What truly distinguishes me is my capacity for refining my skills through relentless self-improvement and an insatiable thirst for acquiring new and exciting abilities.</p>
+          </div>
         </section>
 
-        <section className="wrapper projects" id="projects">
-          <h2>projects</h2>
+        <section className="projects" id="projects">
+          <div className="wrapper">
+            <h2>projects</h2>
+
+          </div>
         </section>
 
-        <section className="wrapper tech_stack" id="tech_stack">
-          <h2>tech stacks</h2>
+        <section className="tech_stack" id="tech_stack">
+          <div className="wrapper">
+            <h2>skills</h2>
+
+          </div>
         </section>
 
         <section className="wrapper contact_me" id="contact_me">
-          <h2>contact me</h2>
+          <h2>contact</h2>
         </section>     
         
       </main>
