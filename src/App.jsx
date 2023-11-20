@@ -5,6 +5,9 @@ import "./App.css";
 import StickyNavbar from "./components/StickyNavbar.jsx";
 import About from "./components/About.jsx";
 import Header from "./components/Header.jsx";
+import Projects from "./components/Projects.jsx";
+import TechStack from "./components/TechStack.jsx";
+import Contact from "./components/Contact.jsx";
 
 function App() {
    
@@ -16,25 +19,9 @@ function App() {
       
       <main>
         <About />
-
-        <section className="projects" id="projects">
-          <div className="wrapper">
-            <h2>projects</h2>
-
-          </div>
-        </section>
-
-        <section className="tech_stack" id="tech_stack">
-          <div className="wrapper">
-            <h2>skills</h2>
-
-          </div>
-        </section>
-
-        <section className="wrapper contact_me" id="contact_me">
-          <h2>contact</h2>
-        </section>     
-        
+        <Projects />
+        <TechStack />
+        <Contact />
       </main>
       <footer>
 
