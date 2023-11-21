@@ -1,4 +1,5 @@
 // StickyNavbar
+
 // Component for top navigation menu
 import { useState, useEffect } from 'react';
 
